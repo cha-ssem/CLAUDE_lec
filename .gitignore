@@ -1,0 +1,16 @@
+# 환경 변수 (API Key 등 민감 정보)
+.env
+.env.local
+
+# 의존성 패키지
+node_modules/
+package-lock.json
+
+# 제외 파일
+*.txt
+*.md
+*.pdf
+
+# 임시 파일
+*.tmp
+*.log

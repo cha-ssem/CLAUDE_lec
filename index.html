@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude를 활용한 스마트 창업 & 비즈니스 활용 허브</title>
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-size-md">
+
+  <!-- 최상단 글로벌 툴바 -->
+  <header class="global-header no-print">
+    <div class="header-inner">
+      <div class="brand-area">
+        <div class="brand-icon">✨</div>
+        <div class="brand-text">
+          <span class="brand-title">Claude 비즈니스 강의 허브</span>
+          <span class="brand-sub">스마트 창업 & 비즈니스 활용</span>
+        </div>
+      </div>
+
+      <!-- 우측 접근성 및 출력 도구 -->
+      <div class="utility-tools">
+        <button type="button" id="btnPrintA4" class="btn-action btn-print" title="현재 일차 교재 및 워크시트 바로 인쇄">
+          🖨️ 교재와 워크시트 인쇄
+        </button>
+        <a href="https://notion.so" target="_blank" rel="noopener noreferrer" id="btnHeaderNotion"
+          class="btn-action btn-notion">
+          📒 노션 템플릿 복제
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 메인 네비게이션 (회차별 탭) -->
+  <nav class="main-nav no-print">
+    <div class="nav-inner">
+      <!-- 공통 1~2회차 탭 -->
+      <div class="nav-tabs" id="sessionTabs">
+        <button type="button" class="nav-tab active" data-tab="session1">
+          <span class="tab-badge">1회차</span>
+          <span class="tab-title">첫걸음 & 프롬프트 완벽 설계</span>
+        </button>
+        <button type="button" class="nav-tab" data-tab="session2">
+          <span class="tab-badge">2회차</span>
+          <span class="tab-title">창업 아이디어 & 1-Page 사업계획서</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 메인 콘텐츠 컨테이너 -->
+  <main class="main-container">
+
+    <!-- ================================================================= -->
+    <!-- [실습 허브 & 인쇄용 워크시트 메인 섹션]                              -->
+    <!-- ================================================================= -->
+    <section id="studentModeSection" class="mode-section active">
+
+      <!-- 회차별 수강생 뷰 -->
+      <div class="student-session-container">
+
+        <!-- 회차 요약 카드 (상단) -->
+        <div class="summary-hero-card">
+          <div class="hero-left">
+            <span class="hero-tag" id="currentSessionTag">1일차 실습 룸</span>
+            <h2 id="currentSessionHeading">Claude 첫걸음: 똑부러지는 나만의 비서 만들기</h2>
+            <p id="currentSessionSub">복잡한 명령어는 잊으세요! 역할(Role), 배경(Context), 지시(Instructions), 출력(Format) 4가지만 적어주면 됩니다.
+            </p>
+          </div>
+          <div class="hero-right">
+            <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" class="btn-claude-launch">
+              🚀 Claude 사이트 열기
+            </a>
+          </div>
+        </div>
+
+        <!-- [1일차 전용] Claude 3총사 비교 인포그래픽 카드 -->
+        <div id="claudeTrioCard" class="card trio-card" style="margin-bottom: 24px; display: none;">
+          <div class="card-header">
+            <h3>🌐 1. Claude 제품군 3총사 완벽 비교 인포그래픽</h3>
+            <span class="guide-text">우리 수업은 가장 사용하기 편한 <strong>Claude.ai</strong>를 메인으로 진행합니다.</span>
+          </div>
+          <div class="card-body">
+            <!-- 인포그래픽 이미지 배너 -->
+            <div class="infographic-banner">
+              <img src="images/claude_trio_infographic.jpg"
+                alt="Claude AI 제품군 3총사 비교 인포그래픽 (Claude.ai vs Claude Desktop vs Claude Code)"
+                class="trio-infographic-img">
+            </div>
+
+            <div class="trio-grid" style="margin-top: 16px;">
+              <div class="trio-item active">
+                <div class="trio-badge">초보자 추천 ⭐⭐⭐⭐⭐</div>
+                <h4>🌐 Claude.ai (웹)</h4>
+                <p class="trio-metaphor">"온라인 클라우드 비서"</p>
+                <p class="trio-desc">인터넷 창만 열면 어디서나 접속. 스마트폰 연동, 아티팩트(투명 결재판) 및 프로젝트 기본 탑재.</p>
+              </div>
+              <div class="trio-item">
+                <div class="trio-badge">중급자 추천 ⭐⭐⭐⭐</div>
+                <h4>🖥️ Claude Desktop (앱)</h4>
+                <p class="trio-metaphor">"바탕화면 전담 비서"</p>
+                <p class="trio-desc">PC에 설치해 단축키로 호출. 내 컴퓨터 안의 로컬 파일/프로그램과 직접 연결(MCP 지원).</p>
+              </div>
+              <div class="trio-item">
+                <div class="trio-badge">전문가용 ⭐⭐</div>
+                <h4>👨‍💻 Claude Code (CLI)</h4>
+                <p class="trio-metaphor">"AI 시스템 개발자"</p>
+                <p class="trio-desc">터미널 검은 화면에서 코드를 직접 작성/수정/배포하는 소프트웨어 엔지니어 전용 도구.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- [1일차 전용] 프롬프트 완벽 설계 6대 핵심 가이드 카드 -->
+        <div id="promptMasterCard" class="card prompt-master-card" style="display: none;">
+          <div class="card-header">
+            <h3>🧠 2. 실패 없는 고품질 프롬프트 설계 6대 공식 (4+2 비법)</h3>
+            <span class="guide-text">AI에게 일을 똑부러지게 시키는 핵심 가이드입니다.</span>
+          </div>
+          <div class="card-body">
+            <!-- 프롬프트 6대 공식 인포그래픽 배너 -->
+            <div class="infographic-banner">
+              <img src="images/claude_prompt_formula_infographic.jpg" alt="Claude 프롬프트 구조 설계 6대 공식 인포그래픽"
+                class="trio-infographic-img">
+            </div>
+
+            <div class="formula-grid">
+              <div class="formula-box highlight">
+                <span class="formula-tag">🎭 1. Role (역할)</span>
+                <h5>[경력 + 전문분야 + 태도] 3단 조합</h5>
+                <p>단순 '비서'가 아닌 <em>"20년 경력의 대기업 비서실장이자 정중하고 신뢰감 있는 기획자"</em>로 구체화.</p>
+              </div>
+              <div class="formula-box highlight">
+                <span class="formula-tag">📝 2. Context (배경)</span>
+                <h5>5W1H 팩트 사전 주입</h5>
+                <p>누가, 누구에게, 왜, 어떤 상황에서 보내는지 핵심 팩트를 2~3줄로 제공하여 오해 방지.</p>
+              </div>
+              <div class="formula-box highlight">
+                <span class="formula-tag">📋 3. Instructions (지시)</span>
+                <h5>동사형 번호 매기기 (Step-by-Step)</h5>
+                <p>'알아서 잘 써줘' 금지! <em>1단계 감사 인사 ➔ 2단계 신제품 언급 ➔ 3단계 덕담 마무리</em>로 단계별 지시.</p>
+              </div>
+              <div class="formula-box highlight">
+                <span class="formula-tag">📐 4. Output Format (출력형식)</span>
+                <h5>5대 출력 포맷 선택</h5>
+                <p>①개조식 목록(-) ②마크다운 표(Table) ③공문서 서식 ④3가지 멀티 톤 ⑤아티팩트 독립창.</p>
+              </div>
+              <div class="formula-box">
+                <span class="formula-tag">🛡️ 5. Rules (제약/규칙)</span>
+                <h5>하지 말아야 할 것(가드레일)</h5>
+                <p><em>"불필요한 사족 배제, 어색한 번역투 금지, 결과 본문만 즉시 작성"</em> 규칙으로 품질 극대화.</p>
+              </div>
+              <div class="formula-box">
+                <span class="formula-tag">💡 6. Examples (모범샘플)</span>
+                <h5>원하는 느낌의 샘플 1문장</h5>
+                <p>내가 원하는 문체나 양식의 예시를 1줄 첨부하면 AI가 100% 동일한 스타일로 결과물 도출.</p>
+              </div>
+            </div>
+
+            <!-- Claude.ai 산출물 5종 바 (제목 줄과 산출물 버튼 목록 줄 분리) -->
+            <div class="outputs-strip">
+              <div class="outputs-header">
+                <strong>📦 Claude.ai로 만들 수 있는 산출물 5종:</strong>
+                <span class="pill-click-guide">(각 항목을 클릭하면 실전 예시 프롬프트를 확인하고 복사할 수 있습니다)</span>
+              </div>
+              <div class="outputs-pills-wrap">
+                <button type="button" class="output-pill" data-output="1">① 비즈니스 텍스트 (인사말/공문) 🔍</button>
+                <button type="button" class="output-pill" data-output="2">② 구조화된 분석표 (SWOT/시장조사) 🔍</button>
+                <button type="button" class="output-pill" data-output="3">③ 1-Page 사업계획서/제안서 🔍</button>
+                <button type="button" class="output-pill" data-output="4">④ 계약서 독소조항 비교표 🔍</button>
+                <button type="button" class="output-pill" data-output="5">⑤ 아티팩트 독립 문서 🔍</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- [1일차 전용] LLM 서비스에서 프롬프트 작성 시 4대 필수 유의사항 카드 -->
+        <div id="precautionsCard" class="card precautions-card" style="display: none; margin-bottom: 24px;">
+          <div class="card-header">
+            <h3>🛡️ 3. LLM 서비스에서 프롬프트 작성 시 4대 필수 유의사항</h3>
+            <span class="guide-text">안전하고 신뢰도 높은 비즈니스 AI 활용을 위한 4대 핵심 안전수칙입니다.</span>
+          </div>
+          <div class="card-body">
+            <div class="glossary-grid precautions-grid">
+              <div class="glossary-card">
+                <div class="glossary-term">1. 개인정보 & 사내 기밀 금지 🔒</div>
+                <div class="glossary-metaphor">🛡️ 필수 안전수칙: "가명 및 마스킹 처리"</div>
+                <div class="glossary-desc">주민번호, 계좌번호, 비밀번호, 미공개 사업정보는 반드시 'OO법인', '홍길동'처럼 가명/마스킹 처리하여 입력합니다.</div>
+              </div>
+              <div class="glossary-card">
+                <div class="glossary-term">2. 할루시네이션(거짓) 팩트체크 🧐</div>
+                <div class="glossary-metaphor">🔍 필수 검증수칙: "원문 출처 교차 확인"</div>
+                <div class="glossary-desc">AI가 그럴듯하게 지어낸 법령 조항, 지원금액, 시장 통계는 반드시 실제 공식 문서 및 원문과 교차 검증해야 합니다.</div>
+              </div>
+              <div class="glossary-card">
+                <div class="glossary-term">3. 모호한 단답형 지시 지양 🎯</div>
+                <div class="glossary-metaphor">📐 4대 공식수칙: "역할·배경·지시·형식 한정"</div>
+                <div class="glossary-desc">'알아서 써줘' 식의 모호한 질문 대신, 누가, 누구에게, 왜, 어떤 형식으로 출력할지 4대 공식으로 명확히 한정합니다.</div>
+              </div>
+              <div class="glossary-card">
+                <div class="glossary-term">4. 저작권 & AI 윤리 준수 ⚖️</div>
+                <div class="glossary-metaphor">🤝 비즈니스 윤리: "최종 검토 및 진정성 담기"</div>
+                <div class="glossary-desc">타사의 저작물 무단 도용을 금지하며, AI가 생성한 초안을 바탕으로 대표님의 진정성과 비즈니스 가치를 담아 최종 검토합니다.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- [2일차 전용] 비즈니스 모델(BM) 5대 핵심 축 가이드 카드 -->
+        <div id="session2BmCard" class="card session2-bm-card" style="display: none; margin-bottom: 24px;">
+          <div class="card-header">
+            <h3>🚀 1. 창업 기획: 비즈니스 모델(BM) 5대 핵심 축</h3>
+            <span class="guide-text">머릿속 아이디어를 성공하는 사업으로 구체화하는 5가지 뼈대입니다.</span>
+          </div>
+          <div class="card-body">
+            <!-- BM 5대 핵심 축 인포그래픽 배너 -->
+            <div class="infographic-banner">
+              <img src="images/bm_5pillars_infographic.png"
+                alt="비즈니스 모델(BM) 5대 핵심 축 인포그래픽 (Target Persona, Value Proposition, Revenue Model, Channels, Founder Asset)"
+                class="trio-infographic-img">
+            </div>
+
+            <div class="formula-grid" style="margin-top: 18px;">
+              <div class="formula-box highlight">
+                <span class="formula-tag">🎯 1. Target Persona</span>
+                <h5>타깃 고객 페르소나</h5>
+                <p>누구의 불편함인가? <em>"혈당/혈압 관리가 필요한 6070 액티브 시니어 및 3040 직장인 자녀"</em>처럼 구체적 정의.</p>
+              </div>
+              <div class="formula-box highlight">
+                <span class="formula-tag">💎 2. Value Proposition</span>
+                <h5>핵심 가치 제안 (솔루션)</h5>
+                <p>기존 대안 대비 차별점은? <em>"영양사 1:1 맞춤 식단, 당일 새벽 조리, 저염·저당 특허 조리법"</em> 3대 강점 제시.</p>
+              </div>
+              <div class="formula-box highlight">
+                <span class="formula-tag">💰 3. Revenue Model</span>
+                <h5>가격 및 지속 수익 구조</h5>
+                <p>돈은 어디서 나오는가? <em>"월 25만~40만 원 정기구독료 + 맞춤형 건강기능식품 큐레이션 번들 판매"</em>.</p>
+              </div>
+              <div class="formula-box highlight">
+                <span class="formula-tag">📢 4. Channels & Growth</span>
+                <h5>유통 및 마케팅 채널</h5>
+                <p>초기 6개월 고객 획득 방안: <em>"지역 복지관/보건소 연계 무료 건강상담 이벤트 ➔ 카카오 채널 구독 전환"</em>.</p>
+              </div>
+              <div class="formula-box highlight">
+                <span class="formula-tag">🤝 5. Founder Asset</span>
+                <h5>창업자 경력 자산 레버리지</h5>
+                <p>내가 왜 이 사업을 잘하는가? <em>"20년 식품 유통 및 품질 관리 현장 경험을 통한 산지 직거래 네트워크"</em>.</p>
+              </div>
+              <div class="formula-box">
+                <span class="formula-tag">🛡️ 6. Risk & Guardrails</span>
+                <h5>할루시네이션 방어 팩트체크</h5>
+                <p>법인 설립 요건, 대법원 상호 등기 가능 여부, 식품위생법 인허가 조항은 <em>공식 원문으로 교차 확인</em> 필수.</p>
+              </div>
+            </div>
+
+            <!-- 2일차 Claude 산출물 쇼케이스 스트립 -->
+            <div class="outputs-strip" style="margin-top: 20px;">
+              <div class="outputs-header">
+                <strong>📦 2일차 Claude 핵심 창업 산출물 5종:</strong>
+                <span class="pill-click-guide">(각 항목을 클릭하면 실전 예시 프롬프트를 확인하고 복사할 수 있습니다)</span>
+              </div>
+              <div class="outputs-pills-wrap">
+                <button type="button" class="output-pill" data-output="2_1">① 법인명 & 슬로건 5종 🔍</button>
+                <button type="button" class="output-pill" data-output="2_2">② 1-Page 사업계획서 표 🔍</button>
+                <button type="button" class="output-pill" data-output="2_3">③ 경쟁사 SWOT 분석 매트릭스 🔍</button>
+                <button type="button" class="output-pill" data-output="2_4">④ 타깃 고객 심층 인터뷰(FGI) 🔍</button>
+                <button type="button" class="output-pill" data-output="2_5">⑤ 초기 6개월 린 실행 로드맵 🔍</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- [2일차 전용] 1-Page 사업계획서 표준 항목 (PSST 모델) 가이드 카드 -->
+        <div id="session2PlanFormulaCard" class="card session2-plan-card" style="display: none; margin-bottom: 24px;">
+          <div class="card-header">
+            <h3>📊 2. 정부지원사업·투자유치 1-Page 사업계획서 표준 항목 (PSST 모델)</h3>
+            <span class="guide-text">공공기관 심사위원과 투자자가 1분 안에 사업의 가치를 파악할 수 있는 표준 프레임워크입니다.</span>
+          </div>
+          <div class="card-body">
+            <!-- PSST 표준 모델 인포그래픽 배너 -->
+            <div class="infographic-banner">
+              <img src="images/PSST_infographic.png"
+                alt="정부지원사업 표준 사업계획서 4대 핵심 항목 (PSST 모델) 인포그래픽 (Problem, Solution, Scale-up, Team)"
+                class="trio-infographic-img">
+            </div>
+
+            <div class="formula-grid psst-grid" style="margin-top: 18px;">
+              <div class="formula-box highlight">
+                <span class="formula-tag">🔍 P (Problem)</span>
+                <h5>1. 문제 인식 (시장 기회)</h5>
+                <p>기존 시장의 미충족 수요와 고객의 구체적인 고통(Pain-Point)을 데이터와 팩트로 입증합니다.</p>
+              </div>
+              <div class="formula-box highlight">
+                <span class="formula-tag">💡 S (Solution)</span>
+                <h5>2. 실현 가능성 (해결책)</h5>
+                <p>타사가 흉내 내기 어려운 우리만의 특허, 기술, 노하우 등 독창적 솔루션 3가지를 명확히 제시합니다.</p>
+              </div>
+              <div class="formula-box highlight">
+                <span class="formula-tag">📈 S (Scale-up)</span>
+                <h5>3. 성장 전략 (BM & 마케팅)</h5>
+                <p>단가, 원가, 마진율 등 수익 구조와 초기 6개월 고객 유치 및 확장 로드맵을 체계적으로 서술합니다.</p>
+              </div>
+              <div class="formula-box highlight">
+                <span class="formula-tag">👥 T (Team)</span>
+                <h5>4. 팀 역량 (실행 신뢰도)</h5>
+                <p>창업자의 10~30년 경력과 네트워크, 전문 자격 등 사업을 반드시 성공시킬 수 있는 근거를 명시합니다.</p>
+              </div>
+            </div>
+
+            <!-- 1-Page 표준 요약표 (Claude 특화) 산출물 스트립 바 -->
+            <div class="outputs-strip" style="margin-top: 18px;">
+              <div class="outputs-header">
+                <strong>📋 1-Page 표준 요약표 (Claude 특화):</strong>
+                <span class="pill-click-guide">긴 서술형 대신 [사업명 | 사업배경 | 타깃고객 | 핵심솔루션 | 수익모델 | 마케팅전략]을 1장 표준 표로 압축 요약
+                  도출</span>
+              </div>
+              <div class="outputs-pills-wrap">
+                <button type="button" class="output-pill" data-output="2_2">📊 1-Page 표준 사업계획서 요약표 서식 및 프롬프트 확인
+                  🔍</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ============================================================= -->
+        <!-- [1일차 전용 실습 워크스테이션]                                   -->
+        <!-- ============================================================= -->
+        <div id="practiceWorkspaceSession1" class="practice-workspace-wrapper">
+          <div class="practice-workspace-banner">
+            <div class="banner-title-group">
+              <span class="badge-practice-pill">🔥 핵심 실습 워크스테이션</span>
+              <h3>나만의 비즈니스 프롬프트 4단계 조립 & 실시간 완성기</h3>
+            </div>
+            <p class="banner-desc">좌측 빈칸에 내 사업 정보를 입력하면 우측에 Claude에 바로 붙여넣는 완성형 표준 지시문이 실시간 조립됩니다.</p>
+          </div>
+
+          <div class="grid-builder">
+            <!-- 좌측: 빈칸 입력 폼 (내용 입력란) -->
+            <div class="card builder-form-card">
+              <div class="card-header builder-header-highlight">
+                <div class="header-title-col">
+                  <div class="header-title-row">
+                    <h4>✍️ Step 1. 내 사업 내용 입력 (빈칸 채우기)</h4>
+                    <span class="step-tag">직접 입력란</span>
+                  </div>
+                  <span class="guide-text">💡 4가지 항목을 채우거나 상단 예시를 선택하세요.</span>
+                </div>
+              </div>
+              <div class="card-body" id="builderFormFields">
+                <!-- 동적으로 1일차 입력 폼 렌더링 -->
+              </div>
+            </div>
+
+            <!-- 우측: 완성된 프롬프트 & 원클릭 복사 (Step 1과 동일 스타일 및 높이) -->
+            <div class="card builder-result-card">
+              <div class="card-header builder-header-highlight result-header-flex">
+                <div class="header-title-col">
+                  <div class="header-title-row">
+                    <h4>✅ Step 2. 완성된 프롬프트</h4>
+                    <span class="step-tag live-tag">⚡ 실시간 완성</span>
+                  </div>
+                  <span class="guide-text">💡 Step 1 내용을 적용한 후 수정할 부분을 직접 수정하세요.</span>
+                </div>
+                <button type="button" class="btn-copy-main" id="btnCopyGeneratedPrompt">
+                  📋 [원클릭 복사하기]
+                </button>
+              </div>
+              <div class="card-body result-card-body">
+                <div class="prompt-output-box" id="generatedPromptOutput" contenteditable="true" spellcheck="false"
+                  role="textbox" aria-multiline="true" title="클릭하여 내용을 직접 수정할 수 있습니다.">
+                  입력하신 내용으로 똑똑한 업무 지시문이 만들어집니다...
+                </div>
+              </div>
+              <div class="card-footer feedback-footer">
+                <div class="feedback-helpers">
+                  <div class="helper-header">
+                    <span class="helper-icon">⚡</span>
+                    <span class="helper-label">답변이 마음에 안 들 때 원클릭 보정 주문:</span>
+                  </div>
+                  <div class="helper-buttons">
+                    <button type="button" class="btn-helper" data-target="1" data-append="이 내용을 3줄로 핵심만 요약해 줘.">📌 3줄
+                      요약</button>
+                    <button type="button" class="btn-helper" data-target="1"
+                      data-append="전문 용어를 빼고 50대가 이해하기 쉽게 다시 써 줘.">🗣️ 쉬운 말로</button>
+                    <button type="button" class="btn-helper" data-target="1" data-append="한눈에 보기 쉽게 표(Table)로 정리해 줘.">📊
+                      표로 정리</button>
+                    <button type="button" class="btn-helper" data-target="1"
+                      data-append="정중한 톤, 친근한 톤, 간결한 톤 3가지 버전으로 각각 작성해 줘.">🎭 3가지 톤</button>
+                    <button type="button" class="btn-helper" data-target="1"
+                      data-append="실제 업무에 바로 적용할 수 있는 구체적인 실행 예시 2가지를 추가해 줘.">💡 구체적 예시</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================================= -->
+        <!-- [2일차 전용 실습 워크스테이션 1: 창업 아이디어 & 네이밍·슬로건]       -->
+        <!-- ============================================================= -->
+        <div id="practiceWorkspaceSession2_1" class="practice-workspace-wrapper"
+          style="display: none; margin-bottom: 28px;">
+          <div class="practice-workspace-banner">
+            <div class="banner-title-group">
+              <span class="badge-practice-pill">🔥 2일차 실습 워크스테이션 1</span>
+              <h3>창업 아이디어 구체화 & 매력적인 사명(상호)·슬로건 5종 도출기</h3>
+            </div>
+            <p class="banner-desc">내 창업 희망 분야와 경력 자산을 입력하면 대법원 등기소 상표 등록 가능성 높은 법인명 5개와 브랜드 슬로건이 실시간 조립됩니다.</p>
+          </div>
+
+          <div class="grid-builder">
+            <!-- 좌측: 빈칸 입력 폼 -->
+            <div class="card builder-form-card">
+              <div class="card-header builder-header-highlight">
+                <div class="header-title-col">
+                  <div class="header-title-row">
+                    <h4>✍️ Step 1. 아이디어 & 경력 자산 입력</h4>
+                    <span class="step-tag">네이밍 입력란</span>
+                  </div>
+                  <span class="guide-text">💡 창업 아이템과 타깃을 입력하거나 빠른 예시를 선택하세요.</span>
+                </div>
+              </div>
+              <div class="card-body" id="builderFormFields2_1">
+                <!-- 동적으로 2일차 실습 1 입력 폼 렌더링 -->
+              </div>
+            </div>
+
+            <!-- 우측: 완성된 네이밍 프롬프트 -->
+            <div class="card builder-result-card">
+              <div class="card-header builder-header-highlight result-header-flex">
+                <div class="header-title-col">
+                  <div class="header-title-row">
+                    <h4>✅ Step 2. 완성된 네이밍 프롬프트</h4>
+                    <span class="step-tag live-tag">⚡ 실시간 완성</span>
+                  </div>
+                  <span class="guide-text">💡 Step 1 내용을 적용한 후 수정할 부분을 직접 수정하세요.</span>
+                </div>
+                <button type="button" class="btn-copy-main" id="btnCopyGeneratedPrompt2_1">
+                  📋 [원클릭 복사하기]
+                </button>
+              </div>
+              <div class="card-body result-card-body">
+                <div class="prompt-output-box" id="generatedPromptOutput2_1" contenteditable="true" spellcheck="false"
+                  role="textbox" aria-multiline="true" title="클릭하여 내용을 직접 수정할 수 있습니다.">
+                  아이디어 입력 시 매력적인 사명과 슬로건 도출 프롬프트가 생성됩니다...
+                </div>
+              </div>
+              <div class="card-footer feedback-footer">
+                <div class="feedback-helpers">
+                  <div class="helper-header">
+                    <span class="helper-icon">⚡</span>
+                    <span class="helper-label">사명/슬로건 보정 원클릭 주문:</span>
+                  </div>
+                  <div class="helper-buttons">
+                    <button type="button" class="btn-helper" data-target="2_1"
+                      data-append="대법원 인터넷등기소 및 키프리스 상표권 등록 가능성이 높은 고유한 이름으로 3개 더 추천해 줘.">🏛️ 상표권 친화형</button>
+                    <button type="button" class="btn-helper" data-target="2_1"
+                      data-append="순우리말의 따뜻한 감성과 현대적인 세련됨이 어우러진 이름으로 제안해 줘.">🌸 순우리말 감성</button>
+                    <button type="button" class="btn-helper" data-target="2_1"
+                      data-append="글로벌 진출 및 영문 발음이 쉽고 기억에 남는 직관적인 짧은 단어로 제안해 줘.">🌐 글로벌/영문형</button>
+                    <button type="button" class="btn-helper" data-target="2_1"
+                      data-append="타깃 고객의 마음을 울리는 감성적 슬로건과 직관적 슬로건을 각각 2개씩 작성해 줘.">🎯 슬로건 4종</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================================= -->
+        <!-- [2일차 전용 실습 워크스테이션 2: 1-Page 표준 사업계획서 표 생성기] -->
+        <!-- ============================================================= -->
+        <div id="practiceWorkspaceSession2_2" class="practice-workspace-wrapper" style="display: none;">
+          <div class="practice-workspace-banner">
+            <div class="banner-title-group">
+              <span class="badge-practice-pill">📊 2일차 실습 워크스테이션 2</span>
+              <h3>창업진흥원 표준 1-Page 사업계획서 표 자동 생성기</h3>
+            </div>
+            <p class="banner-desc">사명과 사업 모델 세부 정보를 입력하면 공공기관/금융기관 심사위원이 1분 만에 파악할 수 있는 표준 사업계획서 표 생성 프롬프트가 완성됩니다.</p>
+          </div>
+
+          <div class="grid-builder">
+            <!-- 좌측: 빈칸 입력 폼 -->
+            <div class="card builder-form-card">
+              <div class="card-header builder-header-highlight">
+                <div class="header-title-col">
+                  <div class="header-title-row">
+                    <h4>✍️ Step 1. 사업계획서 5대 핵심 항목 입력</h4>
+                    <span class="step-tag">사업계획 입력란</span>
+                  </div>
+                  <span class="guide-text">💡 솔루션과 수익 모델을 입력하거나 빠른 예시를 불러오세요.</span>
+                </div>
+              </div>
+              <div class="card-body" id="builderFormFields2_2">
+                <!-- 동적으로 2일차 실습 2 입력 폼 렌더링 -->
+              </div>
+            </div>
+
+            <!-- 우측: 완성된 사업계획서 프롬프트 -->
+            <div class="card builder-result-card">
+              <div class="card-header builder-header-highlight result-header-flex">
+                <div class="header-title-col">
+                  <div class="header-title-row">
+                    <h4>✅ Step 2. 완성된 사업계획서 프롬프트</h4>
+                    <span class="step-tag live-tag">⚡ 실시간 완성</span>
+                  </div>
+                  <span class="guide-text">💡 Step 1 내용을 적용한 후 수정할 부분을 직접 수정하세요.</span>
+                </div>
+                <button type="button" class="btn-copy-main" id="btnCopyGeneratedPrompt2_2">
+                  📋 [원클릭 복사하기]
+                </button>
+              </div>
+              <div class="card-body result-card-body">
+                <div class="prompt-output-box" id="generatedPromptOutput2_2" contenteditable="true" spellcheck="false"
+                  role="textbox" aria-multiline="true" title="클릭하여 내용을 직접 수정할 수 있습니다.">
+                  사업 내용 입력 시 1-Page 표준 사업계획서 표 생성 프롬프트가 생성됩니다...
+                </div>
+              </div>
+              <div class="card-footer feedback-footer">
+                <div class="feedback-helpers">
+                  <div class="helper-header">
+                    <span class="helper-icon">⚡</span>
+                    <span class="helper-label">사업계획서 보정 원클릭 주문:</span>
+                  </div>
+                  <div class="helper-buttons">
+                    <button type="button" class="btn-helper" data-target="2_2"
+                      data-append="중소벤처기업부 예비창업패키지 심사위원이 높은 점수를 줄 수 있도록 문제 인식과 차별점을 보강해 줘.">🏆 정부지원 심사용</button>
+                    <button type="button" class="btn-helper" data-target="2_2"
+                      data-append="경쟁사 3곳 대비 우리 회사만의 SWOT 강약점 비교 분석 표를 추가로 작성해 줘.">📊 SWOT 비교표</button>
+                    <button type="button" class="btn-helper" data-target="2_2"
+                      data-append="초기 6개월 월별 매출 목표와 단계별 마케팅 실행 방안을 표(Table)로 세분화해 줘.">📅 6개월 로드맵</button>
+                    <button type="button" class="btn-helper" data-target="2_2"
+                      data-append="은행 및 투자자 대상 1분 엘리베이터 피칭(Speech)용 3줄 스크립트를 작성해 줘.">🎤 1분 피칭 대본</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- [오늘 수업 마무리] 핵심 AI 용어 3분 톡 카드 (회차별 동적 렌더링) -->
+        <div class="card daily-glossary-card">
+          <div class="card-header">
+            <h3>📖 오늘 수업 마무리: 핵심 AI 용어 3분 톡 (직관적 비유)</h3>
+            <span class="guide-text">수업을 마치기 전, 오늘 배운 핵심 용어를 3분 만에 비유로 정리합니다.</span>
+          </div>
+          <div class="card-body">
+            <div class="glossary-grid" id="dailyGlossaryGrid">
+              <!-- JS로 1일차/2일차 맞춤 용어 4종 동적 렌더링 -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 하단: 노션(Notion) 저장 가이드 카드 -->
+        <div class="card notion-guide-card">
+          <div class="notion-guide-inner">
+            <div class="notion-icon">📒</div>
+            <div class="notion-info">
+              <h4>오늘의 15분 아카이빙 미션!</h4>
+              <p id="notionMissionText">Claude에서 생성된 가장 마음에 드는 답변을 복사하여 노션 <strong>[1회차 프롬프트 보관함]</strong>에 붙여넣으세요.</p>
+            </div>
+            <div class="notion-action">
+              <a href="https://notion.so" target="_blank" rel="noopener noreferrer" id="btnBottomNotion"
+                class="btn-action btn-notion">
+                노션 열고 붙여넣기 ➔
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- [인쇄 전용 A4 워크시트 영역]                                       -->
+    <!-- ================================================================= -->
+    <div id="printableWorksheet" class="printable-area only-print">
+      <!-- JS로 현재 선택된 회차에 맞게 A4 양식 생성 -->
+    </div>
+
+  </main>
+
+  <!-- 산출물 5종 예시 프롬프트 팝업 모달 -->
+  <div id="outputPromptModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="outputModalTitle">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge" id="outputModalBadge">산출물 1호</span>
+          <h3 id="outputModalTitle">비즈니스 텍스트 (인사말/공문)</h3>
+        </div>
+        <button type="button" class="btn-modal-close" id="btnCloseOutputModal" aria-label="닫기">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-info-box">
+          <p id="outputModalDesc" class="modal-desc-text">정중한 거래처 감사 인사말, 사내 공지, 고객 안내문 등 멀티 톤 텍스트 도출</p>
+          <div class="modal-tags">
+            <span class="modal-tag">💡 추천 출력 포맷: <strong id="outputModalFormat">멀티 톤 3종 분할 / 정형 서식</strong></span>
+          </div>
+        </div>
+
+        <div class="modal-prompt-section">
+          <div class="section-label-bar">
+            <span>📝 복사하여 바로 쓸 수 있는 <strong>표준 실전 프롬프트</strong></span>
+            <button type="button" class="btn-sm btn-copy" id="btnCopyModalPrompt">📋 프롬프트 복사</button>
+          </div>
+          <pre id="outputModalPromptCode" class="modal-code-block"></pre>
+        </div>
+
+        <div class="modal-output-preview-section">
+          <div class="section-label-bar">
+            <span>✨ <strong>Claude 예상 출력 결과물 예시</strong></span>
+          </div>
+          <div id="outputModalPreview" class="modal-preview-box"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" id="btnFooterCloseModal">창 닫기</button>
+        <button type="button" class="btn-primary" id="btnFooterCopyPrompt">📋 이 프롬프트 복사하기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 토스트 알림 메시지 -->
+  <div id="toastNotification" class="toast-popup">
+    클립보드에 복사되었습니다! Claude 대화창에 [Ctrl + V]로 붙여넣으세요.
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

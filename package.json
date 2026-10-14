@@ -1,0 +1,12 @@
+{
+  "name": "claude-lecture-hub",
+  "version": "1.0.0",
+  "description": "Claude 스마트 창업 & 비즈니스 활용 강의 허브",
+  "type": "module",
+  "scripts": {
+    "generate-image": "node \"C:/Users/HRDPRO/.gemini/config/skills/gpt-image-generator/scripts/generate-image.mjs\""
+  },
+  "keywords": ["claude", "education", "business", "ai"],
+  "author": "",
+  "license": "ISC"
+}

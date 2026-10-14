@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 688 688" width="688" height="688">
+  <defs>
+    
+      <linearGradient id="qrGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#9A3412" />
+        <stop offset="35%" stop-color="#C2410C" />
+        <stop offset="70%" stop-color="#EA580C" />
+        <stop offset="100%" stop-color="#D97706" />
+      </linearGradient>
+      <linearGradient id="finderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7C2D12" />
+        <stop offset="50%" stop-color="#C2410C" />
+        <stop offset="100%" stop-color="#EA580C" />
+      </linearGradient>
+      <linearGradient id="logoBadgeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#EA580C" />
+        <stop offset="100%" stop-color="#C2410C" />
+      </linearGradient>
+      <linearGradient id="sparkCenterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FEF3C7" />
+        <stop offset="100%" stop-color="#F59E0B" />
+      </linearGradient>
+      <filter id="badgeShadow" x="-30%" y="-30%" width="160%" height="160%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#7C2D12" flood-opacity="0.25" />
+      </filter>
+      <filter id="sparkShadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#431407" flood-opacity="0.3" />
+      </filter>
+      <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+        <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#000000" flood-opacity="0.08" />
+      </filter>
+    
+  </defs>
+  <!-- Main Card Canvas -->
+  <rect x="8" y="8" width="672" height="672" rx="32" ry="32" fill="#FFFFFF" filter="url(#cardShadow)" />
+  
+  <!-- Subtle Header & Footer Branding Accents -->
+  <g opacity="0.8">
+    <circle cx="28" cy="28" r="3.5" fill="#E5E7EB" />
+    <circle cx="660" cy="28" r="3.5" fill="#E5E7EB" />
+    <circle cx="28" cy="660" r="3.5" fill="#E5E7EB" />
+    <circle cx="660" cy="660" r="3.5" fill="#E5E7EB" />
+  </g>
+
+  <!-- Data Modules -->
+  <g id="modules">
+    <circle cx="184" cy="56" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="56" r="7.04" fill="url(#qrGradient)" />
+<circle cx="296" cy="56" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="56" r="7.04" fill="url(#qrGradient)" />
+<circle cx="328" cy="56" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="56" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="56" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="56" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="56" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="72" r="7.04" fill="url(#qrGradient)" />
+<circle cx="328" cy="72" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="72" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="72" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="72" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="72" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="72" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="72" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="72" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="88" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="88" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="88" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="88" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="104" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="104" r="7.04" fill="url(#qrGradient)" />
+<circle cx="296" cy="104" r="7.04" fill="url(#qrGradient)" />
+<circle cx="360" cy="104" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="104" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="104" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="104" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="104" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="104" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="120" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="120" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="120" r="7.04" fill="url(#qrGradient)" />
+<circle cx="360" cy="120" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="120" r="7.04" fill="url(#qrGradient)" />
+<circle cx="392" cy="120" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="120" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="120" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="120" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="120" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="120" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="120" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="136" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="136" r="7.04" fill="url(#qrGradient)" />
+<circle cx="232" cy="136" r="7.04" fill="url(#qrGradient)" />
+<circle cx="248" cy="136" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="136" r="7.04" fill="url(#qrGradient)" />
+<circle cx="328" cy="136" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="136" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="136" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="136" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="136" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="136" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="152" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="152" r="7.04" fill="url(#qrGradient)" />
+<circle cx="248" cy="152" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="152" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="152" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="152" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="152" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="152" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="152" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="152" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="152" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="168" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="168" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="168" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="168" r="7.04" fill="url(#qrGradient)" />
+<circle cx="360" cy="168" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="168" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="168" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="168" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="168" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="168" r="7.04" fill="url(#qrGradient)" />
+<circle cx="88" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="120" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="152" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="232" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="248" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="392" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="584" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="184" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="232" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="296" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="360" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="392" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="600" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="200" r="7.04" fill="url(#qrGradient)" />
+<circle cx="104" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="120" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="152" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="168" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="296" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="328" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="360" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="392" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="584" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="216" r="7.04" fill="url(#qrGradient)" />
+<circle cx="56" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="72" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="88" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="104" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="168" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="232" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="296" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="328" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="392" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="232" r="7.04" fill="url(#qrGradient)" />
+<circle cx="56" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="88" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="152" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="248" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="296" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="360" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="248" r="7.04" fill="url(#qrGradient)" />
+<circle cx="56" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="72" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="88" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="104" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="232" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="296" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="360" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="584" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="600" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="264" r="7.04" fill="url(#qrGradient)" />
+<circle cx="72" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="88" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="104" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="152" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="328" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="392" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="568" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="600" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="280" r="7.04" fill="url(#qrGradient)" />
+<circle cx="72" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="88" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="120" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="248" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="568" cy="296" r="7.04" fill="url(#qrGradient)" />
+<circle cx="56" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="88" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="104" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="120" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="152" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="232" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="584" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="312" r="7.04" fill="url(#qrGradient)" />
+<circle cx="56" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="72" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="104" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="168" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="248" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="600" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="328" r="7.04" fill="url(#qrGradient)" />
+<circle cx="56" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="104" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="120" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="152" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="168" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="232" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="584" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="600" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="344" r="7.04" fill="url(#qrGradient)" />
+<circle cx="56" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="104" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="120" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="168" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="360" r="7.04" fill="url(#qrGradient)" />
+<circle cx="56" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="72" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="88" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="120" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="152" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="168" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="248" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="584" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="376" r="7.04" fill="url(#qrGradient)" />
+<circle cx="56" cy="392" r="7.04" fill="url(#qrGradient)" />
+<circle cx="72" cy="392" r="7.04" fill="url(#qrGradient)" />
+<circle cx="88" cy="392" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="392" r="7.04" fill="url(#qrGradient)" />
+<circle cx="232" cy="392" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="392" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="392" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="392" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="392" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="392" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="392" r="7.04" fill="url(#qrGradient)" />
+<circle cx="584" cy="392" r="7.04" fill="url(#qrGradient)" />
+<circle cx="56" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="72" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="104" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="152" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="168" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="248" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="392" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="568" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="408" r="7.04" fill="url(#qrGradient)" />
+<circle cx="120" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="168" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="232" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="296" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="328" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="584" cy="424" r="7.04" fill="url(#qrGradient)" />
+<circle cx="56" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="72" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="104" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="120" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="152" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="440" r="7.04" fill="url(#qrGradient)" />
+<circle cx="72" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="88" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="104" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="168" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="328" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="600" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="456" r="7.04" fill="url(#qrGradient)" />
+<circle cx="56" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="88" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="136" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="152" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="232" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="296" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="360" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="568" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="600" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="472" r="7.04" fill="url(#qrGradient)" />
+<circle cx="72" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="88" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="120" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="168" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="328" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="360" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="488" r="7.04" fill="url(#qrGradient)" />
+<circle cx="56" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="104" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="120" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="152" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="232" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="296" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="360" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="568" cy="504" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="520" r="7.04" fill="url(#qrGradient)" />
+<circle cx="232" cy="520" r="7.04" fill="url(#qrGradient)" />
+<circle cx="328" cy="520" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="520" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="520" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="520" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="520" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="520" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="520" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="520" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="520" r="7.04" fill="url(#qrGradient)" />
+<circle cx="568" cy="520" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="520" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="520" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="232" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="360" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="568" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="600" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="536" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="552" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="552" r="7.04" fill="url(#qrGradient)" />
+<circle cx="296" cy="552" r="7.04" fill="url(#qrGradient)" />
+<circle cx="328" cy="552" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="552" r="7.04" fill="url(#qrGradient)" />
+<circle cx="392" cy="552" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="552" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="552" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="552" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="552" r="7.04" fill="url(#qrGradient)" />
+<circle cx="568" cy="552" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="552" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="248" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="296" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="328" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="392" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="568" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="584" cy="568" r="7.04" fill="url(#qrGradient)" />
+<circle cx="216" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="360" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="392" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="408" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="568" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="584" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="584" r="7.04" fill="url(#qrGradient)" />
+<circle cx="184" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="232" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="248" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="296" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="312" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="328" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="568" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="584" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="600" r="7.04" fill="url(#qrGradient)" />
+<circle cx="200" cy="616" r="7.04" fill="url(#qrGradient)" />
+<circle cx="248" cy="616" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="616" r="7.04" fill="url(#qrGradient)" />
+<circle cx="344" cy="616" r="7.04" fill="url(#qrGradient)" />
+<circle cx="360" cy="616" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="616" r="7.04" fill="url(#qrGradient)" />
+<circle cx="456" cy="616" r="7.04" fill="url(#qrGradient)" />
+<circle cx="472" cy="616" r="7.04" fill="url(#qrGradient)" />
+<circle cx="488" cy="616" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="616" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="616" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="616" r="7.04" fill="url(#qrGradient)" />
+<circle cx="568" cy="616" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="616" r="7.04" fill="url(#qrGradient)" />
+<circle cx="264" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="280" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="296" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="328" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="360" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="376" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="392" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="424" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="440" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="504" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="520" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="536" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="552" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="584" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="616" cy="632" r="7.04" fill="url(#qrGradient)" />
+<circle cx="632" cy="632" r="7.04" fill="url(#qrGradient)" />
+
+  </g>
+
+  <!-- Precision Finder Patterns -->
+  <g id="finders">
+    
+      <!-- Finder Pattern Outer Ring -->
+      <rect x="56" y="56" width="96" height="96" rx="25.6" ry="25.6" fill="none" stroke="url(#finderGradient)" stroke-width="16" />
+      <!-- Finder Pattern Center Core -->
+      <rect x="80" y="80" width="48" height="48" rx="17.6" ry="17.6" fill="url(#finderGradient)" />
+    
+      <!-- Finder Pattern Outer Ring -->
+      <rect x="536" y="56" width="96" height="96" rx="25.6" ry="25.6" fill="none" stroke="url(#finderGradient)" stroke-width="16" />
+      <!-- Finder Pattern Center Core -->
+      <rect x="560" y="80" width="48" height="48" rx="17.6" ry="17.6" fill="url(#finderGradient)" />
+    
+      <!-- Finder Pattern Outer Ring -->
+      <rect x="56" y="536" width="96" height="96" rx="25.6" ry="25.6" fill="none" stroke="url(#finderGradient)" stroke-width="16" />
+      <!-- Finder Pattern Center Core -->
+      <rect x="80" y="560" width="48" height="48" rx="17.6" ry="17.6" fill="url(#finderGradient)" />
+    
+  </g>
+
+  <!-- Center Emblem -->
+  
+    <!-- Center Badge Background with Glow -->
+    <circle cx="344" cy="344" r="60.6" fill="#FFFFFF" filter="url(#badgeShadow)" />
+    <circle cx="344" cy="344" r="57.6" fill="url(#logoBadgeBg)" stroke="#FFFFFF" stroke-width="3" />
+    
+    <!-- Claude / AI Stylized Spark Symbol -->
+    <g transform="translate(322, 322)">
+      <path d="M22 2 C22 2 23.5 12.5 28 17 C32.5 21.5 43 23 43 23 C43 23 32.5 24.5 28 29 C23.5 33.5 22 44 22 44 C22 44 20.5 33.5 16 29 C11.5 24.5 1 23 1 23 C1 23 11.5 21.5 16 17 C20.5 12.5 22 2 22 2 Z" fill="#FFFFFF" filter="url(#sparkShadow)" />
+      <circle cx="22" cy="23" r="3.5" fill="url(#sparkCenterGrad)" />
+    </g>
+  
+</svg>

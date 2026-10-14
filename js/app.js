@@ -25,7 +25,7 @@ function escapeHtml(str) {
 // ==========================================================================
 const SESSIONS_DATA = {
   1: {
-    tag: "1일차 실습 룸",
+    tag: "1회차 실습 룸",
     title: "Claude 첫걸음: 3총사 비교 & 실패 없는 프롬프트 6대 공식",
     sub: "역할(Role), 배경(Context), 지시(Instructions), 출력(Format) 4대 기본기에 규칙(Rules)과 예시(Examples)를 더해 완벽한 결과물을 뽑아냅니다.",
     notionMission: "오늘 실습에서 생성된 가장 마음에 드는 거래처 인사말/안내문 1개를 복사하여 노션 <strong>[1회차 프롬프트 보관함]</strong>에 붙여넣으세요.",
@@ -149,7 +149,7 @@ const SESSIONS_DATA = {
   },
 
   2: {
-    tag: "2일차 실습 룸",
+    tag: "2회차 실습 룸",
     title: "창업 아이디어 구체화: 네이밍 5종 & 1-Page 사업계획서",
     sub: "내 머릿속에만 있던 창업 아이템을 전문적인 1-Page 사업계획서 표와 매력적인 사명으로 구체화합니다.",
     notionMission: "Claude가 도출한 법인명 후보 중 마음에 드는 2개와 1-Page 사업계획서 표를 복사하여 노션 <strong>[2회차 사업 기획 아카이브]</strong>에 저장하세요.",
@@ -1122,16 +1122,16 @@ if (btnPrintA4) {
     
     if (printContainer && data) {
       if (currentSession === 1) {
-        // [1회차 워크시트] 단일 1페이지 인쇄
+        // [1일차 워크시트] 단일 1페이지 인쇄
         const standardPromptText = STANDARD_PROMPTS[1];
 
         printContainer.innerHTML = `
           <div class="print-worksheet-page">
             <div class="print-sheet-header">
               <div>
-                <span class="print-badge">[워크시트 1호] 1회차 실습 교재</span>
+                <span class="print-badge">[워크시트 1호]</span>
                 <h2 class="print-sheet-title">${data.title}</h2>
-                <p class="print-course-sub">과정명: Claude로 시작하는 스마트 창업 & 비즈니스 활용 (1회차 실습)</p>
+                <p class="print-course-sub">과정명: Claude로 시작하는 스마트 창업 & 비즈니스 활용 (1회차)</p>
               </div>
             </div>
 
@@ -1230,16 +1230,16 @@ if (btnPrintA4) {
           </div>
         `;
       } else if (currentSession === 2) {
-        // [2회차 워크시트] 2페이지 완벽 분할 인쇄 (Page 1: 사명/슬로건 & BM | Page 2: 1-Page 사업계획서 & PSST)
+        // [2일차 워크시트] 2페이지 완벽 분할 인쇄 (Page 1: 사명/슬로건 & BM | Page 2: 1-Page 사업계획서 & PSST)
         const prompt1Text = STANDARD_PROMPTS[2].practice1;
         const prompt2Text = STANDARD_PROMPTS[2].practice2;
 
         printContainer.innerHTML = `
-          <!-- ================= [2회차 워크시트 1페이지: 실습 1] ================= -->
+          <!-- ================= [2일차 워크시트 1페이지: 실습 1] ================= -->
           <div class="print-worksheet-page">
             <div class="print-sheet-header">
               <div>
-                <span class="print-badge">[워크시트 2-1호] 2회차 창업 아이디어 & 사명·슬로건 도출 (1/2 페이지)</span>
+                <span class="print-badge">[워크시트 2-1호] 창업 아이디어 & 사명·슬로건 도출 (1/2 페이지)</span>
                 <h2 class="print-sheet-title">창업 아이디어 구체화 및 법인명·브랜드 슬로건 5종 도출</h2>
                 <p class="print-course-sub">과정명: Claude로 시작하는 스마트 창업 & 비즈니스 활용 (2회차 실습 1)</p>
               </div>
@@ -1317,11 +1317,11 @@ if (btnPrintA4) {
             </div>
           </div>
 
-          <!-- ================= [2회차 워크시트 2페이지: 실습 2] ================= -->
+          <!-- ================= [2일차 워크시트 2페이지: 실습 2] ================= -->
           <div class="print-worksheet-page">
             <div class="print-sheet-header">
               <div>
-                <span class="print-badge">[워크시트 2-2호] 2회차 창업진흥원 표준 1-Page 사업계획서 (2/2 페이지)</span>
+                <span class="print-badge">[워크시트 2-2호] 창업진흥원 표준 1-Page 사업계획서 (2/2 페이지)</span>
                 <h2 class="print-sheet-title">정부지원사업 표준 1-Page 사업계획서 표 요약본 완성</h2>
                 <p class="print-course-sub">과정명: Claude로 시작하는 스마트 창업 & 비즈니스 활용 (2회차 실습 2)</p>
               </div>
@@ -1373,7 +1373,7 @@ if (btnPrintA4) {
             </div>
 
             <div class="print-section">
-              <h3 class="print-sec-title">4. 오늘의 15분 노션 아카이빙 미션 체크리스트 & 2일차 자가 점검표</h3>
+              <h3 class="print-sec-title">4. 오늘의 15분 노션 아카이빙 미션 체크리스트 & 2회차 자가 점검표</h3>
               <div class="print-check-box">
                 ${data.checklist ? data.checklist.map(c => `
                   <div class="print-check-item">□ ${c}</div>
@@ -1385,8 +1385,8 @@ if (btnPrintA4) {
       }
     }
 
-    // PDF 저장 시 기본 파일명으로 자동 제안되는 문서 타이틀 설정
-    document.title = `${BASE_DOC_TITLE}_${currentSession}일차`;
+    // PDF 저장 시 기본 파일명 및 브라우저 인쇄 머리글로 자동 지정되는 문서 타이틀 설정
+    document.title = `${BASE_DOC_TITLE}_${currentSession}회차`;
 
     // 인쇄 대화상자 호출
     window.print();

@@ -757,14 +757,14 @@ function renderSessionContent(sessionNum) {
   if (practiceWorkspaceSession2_2) practiceWorkspaceSession2_2.style.display = (sessionNum === 2) ? "block" : "none";
 
   // 1. 문서 타이틀 및 수강생 헤더 영역 갱신
-  document.title = `${BASE_DOC_TITLE}_${sessionNum}일차`;
+  document.title = `${BASE_DOC_TITLE}_${sessionNum}회차`;
   document.getElementById("currentSessionTag").textContent = data.tag;
   document.getElementById("currentSessionHeading").textContent = data.title;
   document.getElementById("currentSessionSub").textContent = data.sub;
   document.getElementById("notionMissionText").innerHTML = data.notionMission;
 
   if (btnPrintA4) {
-    btnPrintA4.title = `[${sessionNum}일차] 교재 및 워크시트 바로 인쇄`;
+    btnPrintA4.title = `[${sessionNum}회차] 교재 및 워크시트 바로 인쇄`;
   }
 
   // 2. 워크스테이션 폼 필드 렌더링
@@ -1122,16 +1122,16 @@ if (btnPrintA4) {
     
     if (printContainer && data) {
       if (currentSession === 1) {
-        // [1일차 워크시트] 단일 1페이지 인쇄
+        // [1회차 워크시트] 단일 1페이지 인쇄
         const standardPromptText = STANDARD_PROMPTS[1];
 
         printContainer.innerHTML = `
           <div class="print-worksheet-page">
             <div class="print-sheet-header">
               <div>
-                <span class="print-badge">[워크시트 1호]</span>
+                <span class="print-badge">[워크시트 1호] 1회차 실습 교재</span>
                 <h2 class="print-sheet-title">${data.title}</h2>
-                <p class="print-course-sub">과정명: Claude로 시작하는 스마트 창업 & 비즈니스 활용</p>
+                <p class="print-course-sub">과정명: Claude로 시작하는 스마트 창업 & 비즈니스 활용 (1회차 실습)</p>
               </div>
             </div>
 
@@ -1230,18 +1230,18 @@ if (btnPrintA4) {
           </div>
         `;
       } else if (currentSession === 2) {
-        // [2일차 워크시트] 2페이지 완벽 분할 인쇄 (Page 1: 사명/슬로건 & BM | Page 2: 1-Page 사업계획서 & PSST)
+        // [2회차 워크시트] 2페이지 완벽 분할 인쇄 (Page 1: 사명/슬로건 & BM | Page 2: 1-Page 사업계획서 & PSST)
         const prompt1Text = STANDARD_PROMPTS[2].practice1;
         const prompt2Text = STANDARD_PROMPTS[2].practice2;
 
         printContainer.innerHTML = `
-          <!-- ================= [2일차 워크시트 1페이지: 실습 1] ================= -->
+          <!-- ================= [2회차 워크시트 1페이지: 실습 1] ================= -->
           <div class="print-worksheet-page">
             <div class="print-sheet-header">
               <div>
-                <span class="print-badge">[워크시트 2-1호] 창업 아이디어 & 사명·슬로건 도출 (1/2 페이지)</span>
+                <span class="print-badge">[워크시트 2-1호] 2회차 창업 아이디어 & 사명·슬로건 도출 (1/2 페이지)</span>
                 <h2 class="print-sheet-title">창업 아이디어 구체화 및 법인명·브랜드 슬로건 5종 도출</h2>
-                <p class="print-course-sub">과정명: Claude로 시작하는 스마트 창업 & 비즈니스 활용 (2일차 실습 1)</p>
+                <p class="print-course-sub">과정명: Claude로 시작하는 스마트 창업 & 비즈니스 활용 (2회차 실습 1)</p>
               </div>
             </div>
 
@@ -1317,13 +1317,13 @@ if (btnPrintA4) {
             </div>
           </div>
 
-          <!-- ================= [2일차 워크시트 2페이지: 실습 2] ================= -->
+          <!-- ================= [2회차 워크시트 2페이지: 실습 2] ================= -->
           <div class="print-worksheet-page">
             <div class="print-sheet-header">
               <div>
-                <span class="print-badge">[워크시트 2-2호] 창업진흥원 표준 1-Page 사업계획서 (2/2 페이지)</span>
+                <span class="print-badge">[워크시트 2-2호] 2회차 창업진흥원 표준 1-Page 사업계획서 (2/2 페이지)</span>
                 <h2 class="print-sheet-title">정부지원사업 표준 1-Page 사업계획서 표 요약본 완성</h2>
-                <p class="print-course-sub">과정명: Claude로 시작하는 스마트 창업 & 비즈니스 활용 (2일차 실습 2)</p>
+                <p class="print-course-sub">과정명: Claude로 시작하는 스마트 창업 & 비즈니스 활용 (2회차 실습 2)</p>
               </div>
             </div>
 

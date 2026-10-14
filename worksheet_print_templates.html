@@ -426,9 +426,9 @@
       <span id="toolbarSubtitle" style="color: #9ca3af; margin-left: 8px; font-size: 10.5pt;">(A4 인쇄 최적화)</span>
     </div>
     <div class="toolbar-actions">
-      <button type="button" class="btn-tab-select" id="btnTab1" onclick="switchSession(1)">📘 1일차 교재·워크시트</button>
-      <button type="button" class="btn-tab-select" id="btnTab2" onclick="switchSession(2)">📙 2일차 교재·워크시트</button>
-      <button type="button" class="btn-tab-select" id="btnTabAll" onclick="switchSession('all')">📑 1·2일차 전체 출력</button>
+      <button type="button" class="btn-tab-select" id="btnTab1" onclick="switchSession(1)">📘 1회차 교재·워크시트</button>
+      <button type="button" class="btn-tab-select" id="btnTab2" onclick="switchSession(2)">📙 2회차 교재·워크시트</button>
+      <button type="button" class="btn-tab-select" id="btnTabAll" onclick="switchSession('all')">📑 1·2회차 전체 출력</button>
       <button type="button" class="btn-print-action" onclick="window.print()">🖨️ 바로 인쇄하기</button>
     </div>
   </div>
@@ -436,12 +436,12 @@
   <div class="sheet-wrapper">
 
     <!-- =================================================================== -->
-    <!-- [1일차 교재 & 워크시트] - A4 1장 완벽 균등 배분 수록                     -->
+    <!-- [1회차 교재 & 워크시트] - A4 1장 완벽 균등 배분 수록                     -->
     <!-- =================================================================== -->
     <div class="a4-page" id="sheet_session1">
       <div class="sheet-header">
         <div>
-          <span class="sheet-badge">[워크시트 1호] 1일차 실습 교재</span>
+          <span class="sheet-badge">[워크시트 1호] 1회차 실습 교재</span>
           <h1 class="sheet-title">Claude 첫걸음: 3총사 비교 & AI 비서 만들기</h1>
         </div>
       </div>
@@ -532,7 +532,7 @@
 
       <!-- 4. 핵심 AI 용어 3분 정리 -->
       <div>
-        <div class="section-title">4. 📖 1일차 핵심 AI 용어 3분 정리 (비유법)</div>
+        <div class="section-title">4. 📖 1회차 핵심 AI 용어 3분 정리 (비유법)</div>
         <div class="guide-box glossary-list">
           <div class="glossary-row">
             <div class="glossary-term-wrap">
@@ -592,12 +592,12 @@
     </div>
 
     <!-- =================================================================== -->
-    <!-- [2일차 교재 & 워크시트] - A4 1장 완벽 균등 배분 수록                     -->
+    <!-- [2회차 교재 & 워크시트] - A4 1장 완벽 균등 배분 수록                     -->
     <!-- =================================================================== -->
     <div class="a4-page" id="sheet_session2">
       <div class="sheet-header">
         <div>
-          <span class="sheet-badge">[워크시트 2호] 2일차 실습 교재</span>
+          <span class="sheet-badge">[워크시트 2호] 2회차 실습 교재</span>
           <h1 class="sheet-title">창업 아이디어 & 1-Page 사업계획서</h1>
         </div>
       </div>
@@ -745,8 +745,8 @@
         sheet2.classList.add('is-hidden');
         sheet2.style.display = 'none';
 
-        toolbarTitle.textContent = '📖 [1일차 전용] Claude 첫걸음 교재 & 실습 워크시트';
-        toolbarSubtitle.textContent = '(1일차 단독 1장 출력 모드)';
+        toolbarTitle.textContent = '📖 [1회차 전용] Claude 첫걸음 교재 & 실습 워크시트';
+        toolbarSubtitle.textContent = '(1회차 단독 1장 출력 모드)';
       } else if (mode === 2 || mode === '2') {
         btnTab2.classList.add('active');
         sheet1.classList.add('is-hidden');
@@ -754,8 +754,8 @@
         sheet2.classList.remove('is-hidden');
         sheet2.style.display = 'flex';
 
-        toolbarTitle.textContent = '📖 [2일차 전용] 1-Page 사업계획서 교재 & 실습 워크시트';
-        toolbarSubtitle.textContent = '(2일차 단독 1장 출력 모드)';
+        toolbarTitle.textContent = '📖 [2회차 전용] 1-Page 사업계획서 교재 & 실습 워크시트';
+        toolbarSubtitle.textContent = '(2회차 단독 1장 출력 모드)';
       } else {
         btnTabAll.classList.add('active');
         sheet1.classList.remove('is-hidden');
@@ -764,7 +764,7 @@
         sheet2.style.display = 'flex';
 
         toolbarTitle.textContent = '📖 Claude 비즈니스 핵심 교재 & 실습 워크시트 (전체)';
-        toolbarSubtitle.textContent = '(1·2일차 전체 연속 출력 모드)';
+        toolbarSubtitle.textContent = '(1·2회차 전체 연속 출력 모드)';
       }
     }
 

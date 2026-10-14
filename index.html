@@ -26,6 +26,9 @@
 
       <!-- 우측 접근성 및 출력 도구 -->
       <div class="utility-tools">
+        <button type="button" id="btnOpenGoldQr" class="btn-action btn-qr-gold" title="다크 &amp; 앰버 골드 에디션 QR코드 보기">
+          ✨ 골드 QR코드
+        </button>
         <button type="button" id="btnPrintA4" class="btn-action btn-print" title="현재 일차 교재 및 워크시트 바로 인쇄">
           🖨️ 교재와 워크시트 인쇄
         </button>
@@ -624,6 +627,35 @@
       <div class="modal-footer">
         <button type="button" class="btn-secondary" id="btnFooterCloseModal">창 닫기</button>
         <button type="button" class="btn-primary" id="btnFooterCopyPrompt">📋 이 프롬프트 복사하기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 다크 & 앰버 골드 에디션 QR코드 모달 -->
+  <div id="goldQrModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-container qr-modal-container" role="dialog" aria-modal="true" aria-labelledby="goldQrModalTitle">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge gold-badge">✨ 스페셜 에디션</span>
+          <h3 id="goldQrModalTitle">다크 &amp; 앰버 골드 QR코드</h3>
+        </div>
+        <button type="button" class="btn-modal-close" id="btnCloseGoldQrModal" aria-label="닫기">×</button>
+      </div>
+      <div class="modal-body qr-modal-body">
+        <div class="qr-preview-card">
+          <img src="images/special_qr_gold.jpg" alt="다크 &amp; 앰버 골드 에디션 QR코드" class="qr-display-img" id="goldQrImage">
+        </div>
+        <div class="qr-info-content">
+          <h4>📱 스마트폰 카메라로 비춰보세요</h4>
+          <p class="qr-url-text">접속 링크: <a href="https://cha-ssem.github.io/CLAUDE_lec/" target="_blank" rel="noopener noreferrer">https://cha-ssem.github.io/CLAUDE_lec/</a></p>
+          <p class="qr-guide-desc">교재 인쇄물이나 프레젠테이션(PPT) 화면에 띄워 수강생들의 빠른 강의 허브 접속을 유도할 수 있습니다.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="images/special_qr_gold.jpg" download="CLAUDE_lec_Gold_QR.jpg" class="btn-primary btn-gold-download">
+          📥 고화질 이미지 다운로드
+        </a>
+        <button type="button" class="btn-secondary" id="btnFooterCloseGoldQrModal">창 닫기</button>
       </div>
     </div>
   </div>

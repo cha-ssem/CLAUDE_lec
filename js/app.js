@@ -1891,4 +1891,54 @@ function copyModalPrompt() {
   copyToClipboard(currentModalPromptText, "📋 산출물 예시 프롬프트가 복사되었습니다! Claude에 붙여넣으세요.");
 }
 
+// ==========================================================================
+// 8. 다크 & 앰버 골드 에디션 QR코드 모달 제어
+// ==========================================================================
+const goldQrModal = document.getElementById("goldQrModal");
+const btnOpenGoldQr = document.getElementById("btnOpenGoldQr");
+const btnCloseGoldQrModal = document.getElementById("btnCloseGoldQrModal");
+const btnFooterCloseGoldQrModal = document.getElementById("btnFooterCloseGoldQrModal");
+
+function openGoldQrModal() {
+  if (!goldQrModal) return;
+  goldQrModal.classList.add("active");
+  goldQrModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closeGoldQrModal() {
+  if (!goldQrModal) return;
+  goldQrModal.classList.remove("active");
+  goldQrModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+function initGoldQrModal() {
+  if (btnOpenGoldQr) {
+    btnOpenGoldQr.addEventListener("click", openGoldQrModal);
+  }
+  if (btnCloseGoldQrModal) {
+    btnCloseGoldQrModal.addEventListener("click", closeGoldQrModal);
+  }
+  if (btnFooterCloseGoldQrModal) {
+    btnFooterCloseGoldQrModal.addEventListener("click", closeGoldQrModal);
+  }
+  if (goldQrModal) {
+    goldQrModal.addEventListener("click", (e) => {
+      if (e.target === goldQrModal) {
+        closeGoldQrModal();
+      }
+    });
+  }
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && goldQrModal && goldQrModal.classList.contains("active")) {
+      closeGoldQrModal();
+    }
+  });
+}
+
+// 초기화 실행
+initOutputModal();
+initGoldQrModal();
+
 

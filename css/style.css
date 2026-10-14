@@ -169,6 +169,21 @@ button, input, select, textarea {
   transition: all 0.15s ease;
 }
 
+.btn-qr-gold {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #fef08a;
+  border: 1px solid #d97706;
+  box-shadow: 0 1px 3px rgba(217, 119, 6, 0.25);
+  font-weight: 700;
+}
+.btn-qr-gold:hover {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  color: #ffffff;
+  border-color: #f59e0b;
+  box-shadow: 0 3px 8px rgba(217, 119, 6, 0.35);
+  transform: translateY(-1px);
+}
+
 .btn-print {
   background-color: var(--bg-card);
   color: var(--text-main);
@@ -946,6 +961,97 @@ button, input, select, textarea {
 
 .modal-footer .btn-primary:active {
   transform: translateY(0);
+}
+
+/* --------------------------------------------------------------------------
+   골드 QR코드 모달 전용 스타일
+   -------------------------------------------------------------------------- */
+.qr-modal-container {
+  max-width: 480px;
+  text-align: center;
+}
+
+.gold-badge {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #fbbf24;
+  border: 1px solid #d97706;
+  font-weight: 700;
+}
+
+.qr-modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  gap: 20px;
+}
+
+.qr-preview-card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border-light);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.qr-preview-card:hover {
+  transform: scale(1.02);
+}
+
+.qr-display-img {
+  width: 280px;
+  height: 280px;
+  max-width: 100%;
+  display: block;
+  border-radius: var(--radius-md);
+}
+
+.qr-info-content h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.qr-url-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  word-break: break-all;
+  margin-bottom: 6px;
+}
+
+.qr-url-text a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.qr-guide-desc {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.btn-gold-download {
+  text-decoration: none;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+  color: #fbbf24 !important;
+  border: 1px solid #d97706 !important;
+  font-weight: 700 !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-gold-download:hover {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+  color: #ffffff !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3) !important;
 }
 
 /* --------------------------------------------------------------------------
